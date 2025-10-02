@@ -1,13 +1,9 @@
 'use client'
 
 import { useEffect } from 'react'
-import { initGTM, initGA, trackPageView } from '@/utils/analytics'
-import { usePathname, useSearchParams } from 'next/navigation'
+import { initGTM, initGA } from '@/utils/analytics'
 
 export default function Analytics() {
-  const pathname = usePathname()
-  const searchParams = useSearchParams()
-
   useEffect(() => {
     // Initialize Google Tag Manager
     const gtmId = process.env.NEXT_PUBLIC_GTM_ID
@@ -21,14 +17,6 @@ export default function Analytics() {
       initGA(gaId)
     }
   }, [])
-
-  useEffect(() => {
-    // Track page views on route change
-    if (pathname) {
-      const url = pathname + (searchParams?.toString() ? `?${searchParams.toString()}` : '')
-      trackPageView(url)
-    }
-  }, [pathname, searchParams])
 
   return (
     <>
