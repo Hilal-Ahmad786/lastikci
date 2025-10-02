@@ -2,6 +2,8 @@
 const nextConfig = {
     reactStrictMode: true,
     swcMinify: true,
+    output: 'export',
+    distDir: 'out', // export edilen dosyalar buraya gelir
     
     // Image optimization
     images: {
