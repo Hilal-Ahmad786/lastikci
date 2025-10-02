@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: '7/24 Mobil Lastikçi | Acil Yol Yardım Hizmeti',
-  description: 'Yozgat\'ta 7/24 mobil lastik değişimi, akü takviyesi ve yol yardım hizmeti. Hızlı, güvenilir ve profesyonel hizmet. Hemen arayın: 0532 052 09 50',
+  description: 'Ankara\'ta 7/24 mobil lastik değişimi, akü takviyesi ve yol yardım hizmeti. Hızlı, güvenilir ve profesyonel hizmet. Hemen arayın: 0532 052 09 50',
   keywords: [
     'mobil lastikçi',
     'yol yardım',
@@ -15,7 +15,7 @@ export const metadata = {
     'akü takviyesi',
     'oto lastik',
     '7/24 lastik servisi',
-    'Yozgat lastikçi',
+    'Ankara lastikçi',
     'mobil oto servis',
     'lastik patlaması',
     'yol kenarı yardım'
@@ -29,7 +29,7 @@ export const metadata = {
   },
   openGraph: {
     title: '7/24 Mobil Lastikçi | Acil Yol Yardım Hizmeti',
-    description: 'Yozgat\'ta 7/24 mobil lastik değişimi, akü takviyesi ve yol yardım hizmeti. Hızlı ve güvenilir.',
+    description: 'Ankara\'ta 7/24 mobil lastik değişimi, akü takviyesi ve yol yardım hizmeti. Hızlı ve güvenilir.',
     url: '/',
     siteName: '7/24 Mobil Lastikçi',
     images: [
@@ -46,7 +46,7 @@ export const metadata = {
   twitter: {
     card: 'summary_large_image',
     title: '7/24 Mobil Lastikçi | Acil Yol Yardım',
-    description: 'Yozgat\'ta 7/24 mobil lastik ve yol yardım hizmeti. Hemen arayın!',
+    description: 'Ankara\'ta 7/24 mobil lastik ve yol yardım hizmeti. Hemen arayın!',
     images: ['/images/og-image.jpg'],
   },
   robots: {
