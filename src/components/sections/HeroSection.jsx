@@ -31,7 +31,7 @@ export default function HeroSection({ onCallClick }) {
           {/* Badge */}
           <div className="inline-flex items-center space-x-2 bg-red-600 text-white px-4 py-2 rounded-full text-sm font-semibold mb-6 shadow-lg animate-pulse-slow">
             <Clock size={18} />
-            <span>7/24 Acil Mobil Yol Yardım</span>
+            <span>7/24 Acil Mobil Yol Yardım-Ahmed-Testing</span>
           </div>
 
           {/* Main Heading */}
