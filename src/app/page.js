@@ -9,12 +9,20 @@ import CTASection from '@/components/sections/CTASection'
 import AboutSection from '@/components/sections/AboutSection'
 import ContactSection from '@/components/sections/ContactSection'
 import useBotProtection from '@/hooks/useBotProtection'
+import useAdvancedBotProtection from '@/hooks/useAdvancedBotProtection'
 import { trackConversion, trackEvent } from '@/utils/analytics'
 
 export default function Home() {
   useBotProtection()
+  const { validatePhoneCall, validateWhatsAppClick } = useAdvancedBotProtection()
 
   const handleCallClick = () => {
+    // Validate with advanced bot protection
+    if (!validatePhoneCall()) {
+      console.warn('Call blocked due to suspicious activity')
+      return
+    }
+
     const phoneNumber = process.env.NEXT_PUBLIC_PHONE_NUMBER || '05320520950'
     window.location.href = `tel:${phoneNumber}`
     
